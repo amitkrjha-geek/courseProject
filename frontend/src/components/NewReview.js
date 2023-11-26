@@ -44,7 +44,17 @@ const NewReview = ({ courses }) => {
     setCoursesFiltered([]);
   };
 
+  const isCourseAvailable = (courseName)=>{
+    courses.filter((course)=>{
+      if(course.name == courseName) return true;
+    })
+    return false
+  }
+
   const postReview = () => {
+    if(!isCourseAvailable){
+      alert('Please create this course first')
+    }
     let data = {
       courseId: selectedCourse,
       review: review,
@@ -108,7 +118,7 @@ const NewReview = ({ courses }) => {
         <Modal.Footer>
           <button
             onClick={postReview}
-           // disabled={selectedCourse === undefined || review === ""}
+           disabled={selectedCourse === undefined || review === ""}
           >
             Submit Review
           </button>

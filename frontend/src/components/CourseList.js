@@ -1,14 +1,22 @@
 import { useHistory } from 'react-router-dom';
 import Search from './search';
 import NewReview from './NewReview';
+import { useState } from 'react';
+import AddNewCourse from './addNewCourse';
 const CourseList = ({courses}) => {
+  const [createCourseModal,setCreateCourseModal] = useState(false)
 
   const history = useHistory();
+  console.log(courses)
   
   return ( 
     <div>
+      {createCourseModal && <AddNewCourse createCourseModal={createCourseModal} setCreateCourseModal={setCreateCourseModal}/>}
       <Search courses={courses}/>
       <NewReview courses={courses}/>
+      <button onClick={()=>{
+        console.log("first")
+        setCreateCourseModal(true)}}>Add Course</button>
       <div className="list-group mt-3">
         
       {

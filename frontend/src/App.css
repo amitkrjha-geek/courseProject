@@ -5,17 +5,26 @@ body, .review-modal{
 
 ul {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-item:hover {
   background-color: grey;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
 .add-review-btn{
   background-color: rgb(38, 170, 126);
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
   
 }

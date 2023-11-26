@@ -38,7 +38,7 @@ const AddReview = (props) => {
 				})
 		}
 		else{
-			reviewService.createReivew(data)
+			reviewService.createReview(data)
 				.then(res => {
 					setSubmitted(true);
 				})

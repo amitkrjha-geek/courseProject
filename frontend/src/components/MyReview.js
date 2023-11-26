@@ -12,11 +12,12 @@ const MyReview = () => {
     reviewService
       .getUserReview()
       .then((res) => {
+        console.log(res)
         setReviews(res.data);
         setIsLoading(false);
       })
       .catch((err) => {
-        console.log(err);
+        // console.log(err);
       });
   }, []);
 
@@ -30,14 +31,18 @@ const MyReview = () => {
           {reviews.map((review, index) => (
             <li className="list-group-item" key={index}>
               <strong>
-                {review.course.courseId} {review.course.name}
+                {review.course.courseId} 
+                {review.course.name}
               </strong>
               <p>{review.review}</p>
 
               {/* Link to edit the review */}
               <Link
                 to={{
-                  pathname: `/courses/${review.course._id}/review`,
+                  pathname: 
+                  `/courses/${review.course._id}/review`
+                  
+                  ,
                   state: {
                     currentReview: review,
                   },

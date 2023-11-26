@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node serveer.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
@@ -17,11 +17,12 @@
     "crypto-js": "^4.1.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "joi": "^17.11.0",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.0.1",
     "mongoose": "^5.13.3",
     "nodemailer": "^6.6.3",
-    "nodemon": "^2.0.12",
+    "nodemon": "^2.0.22",
     "path": "^0.12.7",
     "validator": "^13.6.0"
   }
