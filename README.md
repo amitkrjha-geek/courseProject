@@ -1,4 +1,9 @@
 # course-review
+![GitHub repo size](https://img.shields.io/github/repo-size/amitkrjha-geek/courseProject)
+![GitHub issues](https://img.shields.io/github/issues/amitkrjha-geek/courseProject)
+![GitHub contributors](https://img.shields.io/github/contributors/amitkrjha-geek/courseProject)
+![GitHub stars](https://img.shields.io/github/stars/amitkrjha-geek/courseProject)
+![GitHub forks](https://img.shields.io/github/forks/amitkrjha-geek/courseProject)
 
 
 ## App first look
